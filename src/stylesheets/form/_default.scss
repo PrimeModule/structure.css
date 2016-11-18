@@ -1,8 +1,5 @@
 /**
  * @author PrimeModule
- */
-/**
- * @author PrimeModule
  * @description How to use:
  *
  * <form class="form">
@@ -16,3 +13,24 @@
  *   </fieldset>
  * </form>
  */
+
+.form {
+  // elements
+  &__group { // Represents group of label and field.
+  }
+
+  &__label {
+  }
+
+  &__field { // Wrapper for form field: input, textarea, select.
+  }
+
+  // fields
+  &__input {
+  }
+  &__textarea {
+    // Do not set height here if not needed. Use `rows` attribute on element.
+  }
+  &__select {
+  }
+}
