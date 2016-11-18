@@ -4,7 +4,11 @@
  * @required reset.css [http://meyerweb.com/eric/tools/css/reset/]
  */
 
+@import 'base/variables';
 @import 'base/scaffolding';
 
 @import 'form/default';
 @import 'form/theme/positive';
+
+@import 'components/badge';
+@import 'components/link';

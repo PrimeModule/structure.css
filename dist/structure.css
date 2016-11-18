@@ -3,6 +3,13 @@
  * @requires normalize.css
  * @required reset.css [http://meyerweb.com/eric/tools/css/reset/]
  */
+/**
+ * @author PrimeModule
+ * @description: Good practices:
+ * - Try to avoid magic numbers in your code.
+ * - Using variables makes you more consistent.
+ * - Do not create too many variables.
+ */
 *,
 *:before,
 *:after {
@@ -32,4 +39,10 @@ a {
  *     </div>
  *   </fieldset>
  * </form>
+ */
+/**
+ * @author PrimeModule
+ */
+/**
+ * @author PrimeModule
  */
