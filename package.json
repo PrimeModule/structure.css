@@ -1,0 +1,15 @@
+{
+  "name": "structure.css",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimeModule/structure.css.git"
+  },
+  "author": "PrimeModule",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/PrimeModule/structure.css/issues"
+  },
+  "homepage": "https://github.com/PrimeModule/structure.css#readme"
+}
