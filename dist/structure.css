@@ -1,0 +1,48 @@
+/**
+ * @author PrimeModule
+ * @requires normalize.css
+ * @required reset.css [http://meyerweb.com/eric/tools/css/reset/]
+ */
+/**
+ * @author PrimeModule
+ * @description: Good practices:
+ * - Try to avoid magic numbers in your code.
+ * - Using variables makes you more consistent.
+ * - Do not create too many variables.
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  color: #000;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/**
+ * @author PrimeModule
+ * @description How to use:
+ *
+ * <form class="form">
+ *   <fieldset>
+ *     <div class="form__group">
+ *       <label for="field-id">Field label</label> <!-- /if possible set `for` attribute to bind label with field. Accessibility FTW.
+ *       <div class="form__field">
+ *         <input type="text" id="field-id" class="form__input">
+ *       </div>
+ *     </div>
+ *   </fieldset>
+ * </form>
+ */
+/**
+ * @author PrimeModule
+ */
+/**
+ * @author PrimeModule
+ */

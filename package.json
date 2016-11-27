@@ -1,0 +1,21 @@
+{
+  "name": "structure.css",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimeModule/structure.css.git"
+  },
+  "author": "PrimeModule",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/PrimeModule/structure.css/issues"
+  },
+  "homepage": "https://github.com/PrimeModule/structure.css#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0"
+  }
+}
