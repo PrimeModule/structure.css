@@ -25,6 +25,13 @@
   &__field { // Wrapper for form field: input, textarea, select.
   }
 
+  &__input,
+  &__textarea,
+  &__select {
+    display: block;
+    width: 100%;
+  }
+
   // fields
   &__input {
   }
