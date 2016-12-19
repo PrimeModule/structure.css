@@ -4,11 +4,18 @@
  * @required reset.css [http://meyerweb.com/eric/tools/css/reset/]
  */
 
+@import 'mixins/clearfix';
+
 @import 'base/variables';
+@import 'node_modules/normalize.css/normalize';
 @import 'base/scaffolding';
+
+@import 'layout/section';
 
 @import 'form/default';
 @import 'form/theme/positive';
 
 @import 'components/badge';
 @import 'components/link';
+
+@include form-inline;

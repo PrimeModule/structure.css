@@ -25,6 +25,13 @@
   &__field { // Wrapper for form field: input, textarea, select.
   }
 
+  &__input,
+  &__textarea,
+  &__select {
+    display: block;
+    width: 100%;
+  }
+
   // fields
   &__input {
   }
@@ -32,5 +39,27 @@
     // Do not set height here if not needed. Use `rows` attribute on element.
   }
   &__select {
+  }
+}
+
+@mixin form-inline($label-size: 100px) {
+  .form {
+    &__group {
+      &--inline {
+        @include clearfix;
+        .form {
+          &__label {
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+            width: $label-size;
+          }
+          &__field {
+            display: block;
+            overflow: hidden;
+          }
+        }
+      }
+    }
   }
 }
