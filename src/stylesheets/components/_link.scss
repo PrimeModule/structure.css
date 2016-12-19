@@ -1,6 +1,50 @@
 /**
  * @author PrimeModule
+ * @description How to use:
+ *
+ * <a class="link">
+ *   <span class="link__text">Lorem ipsum</span>
+ * </a>
+ *
+ * <a class="link">
+ *   <span class="link__underline">Lorem ipsum</span>
+ * </a>
  */
 
+@mixin link-theme($name, $color) {
+  &--#{$name} {
+    color: $color;
+  }
+}
+
 .link {
+  cursor: pointer;
+  // elements
+  &__text {
+    border-bottom: 1px solid transparent;
+  }
+  &__underline {
+    border-bottom: 1px solid;
+  }
+
+  &:hover {
+    .link {
+      &__text {
+        border-bottom-color: initial;
+      }
+      &__underline {
+        border-bottom: none;
+      }
+    }
+  }
+
+  // themes
+  @include link-theme('light',      $color-light);
+  @include link-theme('stable',     $color-stable);
+  @include link-theme('positive',   $color-positive);
+  @include link-theme('calm',       $color-calm);
+  @include link-theme('balanced',   $color-balanced);
+  @include link-theme('energized',  $color-energized);
+  @include link-theme('assertive',  $color-assertive);
+  @include link-theme('dark',       $color-dark);
 }
