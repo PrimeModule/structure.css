@@ -4,6 +4,8 @@
  * @required reset.css [http://meyerweb.com/eric/tools/css/reset/]
  */
 
+@import 'mixins/clearfix';
+
 @import 'base/variables';
 @import 'base/scaffolding';
 
@@ -12,3 +14,5 @@
 
 @import 'components/badge';
 @import 'components/link';
+
+@include form-inline();

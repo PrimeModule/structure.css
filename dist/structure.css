@@ -46,3 +46,21 @@ a {
 /**
  * @author PrimeModule
  */
+.form__group--inline::after {
+  display: block;
+  content: ' ';
+  clear: both;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  width: 100%; }
+
+.form__group--inline .form__label {
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  width: 100px; }
+
+.form__group--inline .form__field {
+  display: block;
+  overflow: hidden; }

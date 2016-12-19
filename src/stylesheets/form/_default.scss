@@ -34,3 +34,25 @@
   &__select {
   }
 }
+
+@mixin form-inline($label-size: 100px) {
+  .form {
+    &__group {
+      &--inline {
+        @include clearfix;
+        .form {
+          &__label {
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+            width: $label-size;
+          }
+          &__field {
+            display: block;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
