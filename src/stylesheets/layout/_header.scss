@@ -1,0 +1,49 @@
+/**
+ * @author PrimeModule
+ * @description How to use:
+ *
+ * <header class="header">
+ *   <div class="header__logo">
+ *     <a href="/" class="header__logo__link" title="Logo">Logo</a>
+ *   </div>
+ *
+ *   <nav class="header__navigation">
+ *     <ul class="header__menu">
+ *       <li class="header__menu__item">
+ *         <a href="#">Link</a>
+ *       </li>
+ *     </ul>
+ *   </nav>
+ * </header>
+ */
+
+.header {
+  background-color: $color-light;
+  height: 50px;
+  @include outer-container($max-width);
+  @include clearfix;
+  &--center {
+    text-align: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    &__link {
+    }
+  }
+
+  &__navigation {
+    display: inline-block;
+  }
+
+  &__menu {
+    @include clearfix;
+    &__item {
+      float: left;
+      margin-left: 30px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

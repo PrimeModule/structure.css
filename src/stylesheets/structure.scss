@@ -1,16 +1,17 @@
 /**
  * @author PrimeModule
  * @requires normalize.css
- * @required reset.css [http://meyerweb.com/eric/tools/css/reset/]
  */
 
 @import 'mixins/clearfix';
+@import 'mixins/outer-container';
 
 @import 'base/variables';
 @import 'node_modules/normalize.css/normalize';
 @import 'base/scaffolding';
 
 @import 'layout/section';
+@import 'layout/header';
 
 @import 'form/default';
 @import 'form/theme/positive';
