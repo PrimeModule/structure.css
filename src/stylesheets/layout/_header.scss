@@ -20,9 +20,7 @@
 .header {
   background-color: $color-light;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $max-width; // todo - put in mixin
+  @include outer-container($max-width);
   @include clearfix;
   &--center {
     text-align: center;
