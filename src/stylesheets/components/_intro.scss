@@ -1,0 +1,25 @@
+/**
+ * @author PrimeModule
+ * @description Represents top section of the page. It's an introduction to the
+ * further content.
+ */
+
+.intro {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  &__tagline {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+  &__subline {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 580px;
+  }
+}
+
+// todo - media queries
