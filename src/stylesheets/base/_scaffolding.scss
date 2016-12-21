@@ -19,11 +19,18 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body { // here is the best place to set default font, color, etc. for the whole application
-  color: #000;
+  color: $color-black;
   font-family: helvetica, arial, sans-serif;
   font-size: 13px;
   line-height: 1.4;
+  // overflow-y: hidden; // think twice before uncommenting it, you probably don't need it.
 }
 
 a {

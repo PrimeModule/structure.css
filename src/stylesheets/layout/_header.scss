@@ -18,9 +18,11 @@
  */
 
 .header {
-  background-color: $color-light;
   height: 50px;
-  @include outer-container($max-width);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   @include clearfix;
   &--center {
     text-align: center;
