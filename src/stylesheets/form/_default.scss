@@ -17,12 +17,15 @@
 .form {
   // elements
   &__group { // Represents group of label and field.
+    // todo
   }
 
   &__label {
+    // todo
   }
 
   &__field { // Wrapper for form field: input, textarea, select.
+    // todo
   }
 
   &__input,
@@ -34,11 +37,13 @@
 
   // fields
   &__input {
+    // todo
   }
-  &__textarea {
-    // Do not set height here if not needed. Use `rows` attribute on element.
+  &__textarea { // Do not set height here if not needed. Use `rows` attribute on element.
+    // todo
   }
   &__select {
+    // todo
   }
 }
 
@@ -50,8 +55,8 @@
         .form {
           &__label {
             float: left;
-            text-align: right;
             padding-right: 10px;
+            text-align: right;
             width: $label-size;
           }
           &__field {

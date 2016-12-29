@@ -13,6 +13,15 @@ gulp.task('scss', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('scss:lint', function() {
+  return gulp.src('src/stylesheets/**/*.scss')
+    .pipe(plugins.sassLint({
+      configFile: 'sass-lint.yml'
+    }))
+    .pipe(plugins.sassLint.format())
+    .pipe(plugins.sassLint.failOnError());
+});
+
 gulp.task('watch', function() {
-  gulp.watch('src/stylesheets/**/*.scss', gulp.parallel('scss'));
+  gulp.watch('src/stylesheets/**/*.scss', gulp.series('scss:lint', 'scss'));
 });

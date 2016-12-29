@@ -18,20 +18,18 @@
  */
 
 .header {
+  @include clearfix;
   height: 50px;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
-  @include clearfix;
   &--center {
     text-align: center;
   }
 
   &__logo {
     display: inline-block;
-    &__link {
-    }
   }
 
   &__navigation {
