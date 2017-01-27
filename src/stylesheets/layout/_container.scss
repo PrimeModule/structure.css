@@ -1,0 +1,35 @@
+/**
+ * @author PrimeModule
+ */
+
+.container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  &--light {
+    background-color: $color-light;
+  }
+  &--stable {
+    background-color: $color-stable;
+  }
+  &--positive {
+    background-color: $color-positive;
+  }
+  &--calm {
+    background-color: $color-calm;
+  }
+  &--balanced {
+    background-color: $color-balanced;
+  }
+  &--energized {
+    background-color: $color-energized;
+  }
+  &--assertive {
+    background-color: $color-assertive;
+  }
+  &--dark {
+    background-color: $color-dark;
+  }
+  &--black {
+    background-color: $color-black;
+  }
+}
